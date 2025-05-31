@@ -1,0 +1,206 @@
+ADC 69 b imm
+ADC 65 b zp
+ADC 75 b zp_x
+ADC 6d w abs
+ADC 7d w abs_x
+ADC 79 w abs_y
+ADC 61 b ind_x
+ADC 71 b ind_y
+
+AND 29 b imm
+AND 25 b zp
+AND 35 b zp_x
+AND 2d w abs
+AND 3d w abs_x
+AND 39 w abs_y
+AND 21 b ind_x
+AND 31 b ind_y
+
+ASL 0a 0 acc
+ASL 06 b zp
+ASL 16 b zp_x
+ASL 0e w abs
+ASL 1e w abs_x
+
+BCC 90 b rel
+
+BCS b0 b rel
+
+BEQ f0 b rel
+
+BIT 24 b zp
+BIT 2c w abs
+
+BMI 30 b rel
+
+BNE d0 b rel
+
+BPL 10 b rel
+
+BRK 00 0 impl
+
+BVC 50 b rel
+
+BVS 70 b rel
+
+CLC 18 0 impl
+
+CLD d8 0 impl
+
+CLI 58 0 impl
+
+CLV b8 0 impl
+
+CMP c9 b imm
+CMP c5 b zp
+CMP d5 b zp_x
+CMP cd w abs
+CMP dd w abs_x
+CMP d9 w abs_y
+CMP c1 b ind_x
+CMP d1 b ind_y
+
+CPX e0 b imm
+CPX e4 b zp
+CPX ec w abs
+
+CPY c0 b imm
+CPY c4 b zp
+CPY cc w abs
+
+DEC c6 b zp
+DEC d6 b zp_x
+DEC ce w abs
+DEC de w abs_x
+
+DEX ca 0 impl
+
+DEY 88 0 impl
+
+EOR 49 b imm
+EOR 45 b zp
+EOR 55 b zp_x
+EOR 4d w abs
+EOR 5d w abs_x
+EOR 59 w abs_y
+EOR 41 b ind_x
+EOR 51 b ind_y
+
+INC e6 b zp
+INC f6 b zp_x
+INC ee w abs
+INC fe w abs_x
+
+INX e8 0 impl
+
+INY c8 0 impl
+
+JMP 4c w abs
+JMP 6c w ind
+
+JSR 20 w abs
+
+LDA a9 b imm
+LDA a5 b zp
+LDA b5 b zp_x
+LDA ad w abs
+LDA bd w abs_x
+LDA b9 w abs_y
+LDA a1 b ind_x
+LDA b1 b ind_y
+
+LDX a2 b imm
+LDX a6 b zp
+LDX b6 b zp_y
+LDX ae w abs
+LDX be w abs_y
+
+LDY a0 b imm
+LDY a4 b zp
+LDY b4 b zp_x
+LDY ac w abs
+LDY bc w abs_x
+
+LSR 4a 0 acc
+LSR 46 b zp
+LSR 56 b zp_x
+LSR 4e w abs
+LSR 5e w abs_x
+
+NOP ea 0 impl
+
+ORA 09 b imm
+ORA 05 b zp
+ORA 15 b zp_x
+ORA 0d w abs
+ORA 1d w abs_x
+ORA 19 w abs_y
+ORA 01 b ind_x
+ORA 11 b ind_y
+
+PHA 48 0 impl
+
+PHP 08 0 impl
+
+PLA 68 0 impl
+
+PLP 28 0 impl
+
+ROL 2a 0 acc
+ROL 26 b zp
+ROL 36 b zp_x
+ROL 2e w abs
+ROL 3e w abs_x
+
+ROR 6a 0 acc
+ROR 66 b zp
+ROR 76 b zp_x
+ROR 6e w abs
+ROR 7e w abs_x
+
+RTI 40 0 impl
+
+RTS 60 0 impl
+
+SBC e9 b imm
+SBC e5 b zp
+SBC f5 b zp_x
+SBC ed w abs
+SBC fd w abs_x
+SBC f9 w abs_y
+SBC e1 b ind_x
+SBC f1 b ind_y
+
+SEC 38 0 impl
+
+SED f8 0 impl
+
+SEI 78 0 impl
+
+STA 85 b zp
+STA 95 b zp_x
+STA 8d w abs
+STA 9d w abs_x
+STA 99 w abs_y
+STA 81 b ind_x
+STA 91 b ind_y
+
+STX 86 b zp
+STX 96 b zp_y
+STX 8e w abs
+
+STY 84 b zp
+STY 94 b zp_x
+STY 8c w abs
+
+TAX aa 0 impl
+
+TAY a8 0 impl
+
+TSX ba 0 impl
+
+TXA 8a 0 impl
+
+TXS 9a 0 impl
+
+TYA 98 0 impl
